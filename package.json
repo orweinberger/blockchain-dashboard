@@ -1,0 +1,33 @@
+{
+  "name": "blockchain-dashboard",
+  "version": "0.0.1",
+  "private": false,
+  "author": "Or Weinberger <or@joo.la>",
+  "description": "Bitcoin blockchain analytics",
+  "engine": "node >= 0.10.x",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/orweinberger/blockchain-dashboard.git"
+  },
+  "bugs": "http://github.com/orweinberger/blockchain-dashboard/issues",
+  "contributors": [
+    {
+      "name": "Or Weinberger",
+      "email": "or@joo.la",
+      "url": "http://joo.la"
+    }
+  ],
+  "keywords": [
+    "data",
+    "analytics",
+    "blockchain",
+    "visualization",
+    "bitcoin"
+  ],
+  "dependencies": {
+    "async": "*",
+    "request": "*",
+    "js-yaml":"*"
+  },
+  "license": "MIT"
+}
