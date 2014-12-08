@@ -15,6 +15,7 @@ function pushTransaction(height) {
             delete t.inputs;
             delete t.outputs;
             t.timestamp = t.block_time;
+            t.transaction_counter = 1;
             t.block_height = data.height;
             t.block_height_str = data.height.toString();
             t.size_str = t.size.toString();
@@ -40,11 +41,11 @@ function pushBlock(height) {
       if (!data.error) {
         var date = new Date(data.time);
         data.timestamp = date.toISOString();
+        data.block_counter = 1;
         data.height_str = data.height.toString();
         data.fees_str = data.fees.toString();
         data.bits_str = data.bits.toString();
         data.size_str = data.size.toString();
-        data.transaction_count_str = data.transactions_count.toString();
         data.reward_str = data.reward.toString();
         data.total_out_str = data.total_out.toString();
         data.transactions_count_str = data.transactions_count.toString();
